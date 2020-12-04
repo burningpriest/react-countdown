@@ -1,9 +1,11 @@
 {
+  "homepage": "http://burningpriest.github.io/react-countdown",
   "name": "react-countdown",
   "version": "0.0.1",
   "description": "React Countdown till Christmas",
   "repository": "https://github.com/kristinbaumann/react-countdown",
   "devDependencies": {
+    "gh-pages": "^3.1.0",
     "react-scripts": "0.8.4"
   },
   "dependencies": {
@@ -14,6 +16,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   }
 }

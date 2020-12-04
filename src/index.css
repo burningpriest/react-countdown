@@ -3,20 +3,30 @@ body {
   padding: 0;
   font-family: sans-serif;
   text-align: center;
+  background-color:#301934
 }
 
+
 .App-logo {
-  height: 80px;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
 }
 
 .App-header {
-  background-color: #222;
-  padding: 20px;
+  background-color:#301934 ;
+  padding: 30px;
   color: white;
+  margin-top:150px
 }
 
 .App-header .title{
-  margin-top: 40px;
+  margin-top: 100px;
 }
 
 .App-header a{
@@ -36,13 +46,19 @@ body {
 }
 
 .Countdown{
-  margin: 10px auto;
+  margin: 20px auto;
   padding-bottom: 20px;
+  color:white
 }
 
 .Countdown-col{
   display: inline-block;
 }
+.Countdown-coll{
+  display: inline-block;
+  color:red
+}
+
 
 .Countdown-col-element{
   display: inline-block;
@@ -52,5 +68,5 @@ body {
 }
 
 .Countdown-col-element strong{
-  font-size: 50px;
+  font-size: 35px;
 }
